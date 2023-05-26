@@ -64,6 +64,17 @@ By providing access to the social media handle on this page, Madristas will have
 - Input player profile data
 - Implament OAuth through Google
 - Polish Website Aesthetics
+***
+***
+## **_WIREFRAME_**
+
+![Image](https://i.imgur.com/V52Vpgl.png)
+
+
+
+![Image](https://i.imgur.com/hJFprBn.png)
+
+
 
 ***
 ***
