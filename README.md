@@ -2,7 +2,7 @@
 ####
 _An Interactive Web App For Madridstas_
 
-![Image](https://media4.giphy.com/media/ocAzqRep3bLitRTmKP/giphy.gif?cid=6c09b952s3t9xrnrevgvdpttmn5k9thpklpvrvbov7dewm5p&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+![Image](h[ttps://media4.giphy.com/media/ocAzqRep3bLitRTmKP/giphy.gif?cid=6c09b952s3t9xrnrevgvdpttmn5k9thpklpvrvbov7dewm5p&ep=v1_gifs_search&rid=giphy.gif&ct=g](https://img.olympicchannel.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/pyqaawxxfwzeiib35hsm))
 
 #### Written by Jorge Islas
 
@@ -79,4 +79,4 @@ By providing access to the social media handle on this page, Madristas will have
 ***
 ***
 ### _**Credits**_
-##### Goated Gif: [Tenor](https://tenor.com/view/real-madrid-gif-25803066)
+##### Goated Gif: [Olympics]([https://tenor.com/view/real-madrid-gif-25803066](https://olympics.com/en/news/uefa-champions-league-ucl-winners-list-football-club-teams))
