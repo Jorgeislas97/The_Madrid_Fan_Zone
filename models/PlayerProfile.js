@@ -5,11 +5,11 @@ const Schema = mongoose.Schema;
 
 const playerSchema = new Schema ({
     playerName: String,
+    position: String,
     goals: Number,
     assists: Number,
-    cleanSheets: Number,
-    takeOns: Number,
-    blocks: Number,  
+    takeOnsPg: Number,
+    blocksPg: Number,  
 },{
     timestamps: true
 });

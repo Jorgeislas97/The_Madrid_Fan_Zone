@@ -6,6 +6,10 @@ const app = express();
 require('dotenv').config();
 require('./config/database');
 
+app.get('/', function (req, res) {
+    res.redirect('/Home'); // Redirect to the /Home route
+  });
+
 app.get('/Home', function (req, res) {
   res.send('<h1>Madrid Fan Zone</h1>');
 });
