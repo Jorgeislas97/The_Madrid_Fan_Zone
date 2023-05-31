@@ -3,6 +3,9 @@ const express = require('express');
 
 const app = express();
 
+require('dotenv').config();
+require('./config/database');
+
 app.get('/Home', function (req, res) {
   res.send('<h1>Madrid Fan Zone</h1>');
 });
