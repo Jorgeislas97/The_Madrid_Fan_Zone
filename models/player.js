@@ -14,5 +14,5 @@ const playerSchema = new Schema ({
     timestamps: true
 });
 
-module.exports = mongoose.model('PlayerProfile', playerSchema);
+module.exports = mongoose.model('Player', playerSchema);
 

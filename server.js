@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 app.get('/Home', function (req, res) {
   res.send('<h1>Madrid Fan Zone</h1>');
 });
-app.get('/PlayerProfile', function (req, res) {
+app.get('/Player', function (req, res) {
   res.send('<h1>Player Profile</h1>');
 });
 
