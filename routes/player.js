@@ -8,8 +8,8 @@ router.get('/', playerCtrl.index);
 
 router.get('/new', playerCtrl.new);
 
-router.get('/:id', playerCtrl.show);
+//router.get('/:id', playerCtrl.show);
 
-router.post('/', playerCtrl.create);
+//router.post('/', playerCtrl.create);
 
 module.exports = router;
