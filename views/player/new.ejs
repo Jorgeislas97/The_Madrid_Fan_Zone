@@ -1,0 +1,42 @@
+<%- include('../partials/header') %>
+
+<h2>Enter Player Profile</h2>
+<form action="/player" method="POST">
+  <label>Player Name:
+    <input type="text" name="Player">
+  </label><br>
+  <label for="position">Position:</label>
+<select name="position" id="position">
+  <option value="GK">GK</option>
+  <option value="FB">FB</option>
+  <option value="CB">CB</option>
+  <option value="CM">CM</option>
+  <option value="W">W</option>
+  <option value="ST">ST</option>
+</select><br>
+<label>Goals:
+<input type="number" name="goals">
+</label><br>
+<label>Assists:
+<input type="number" name="assists">
+</label><br>
+<label>Take ons Pg:
+<input type="number" name="takeOns">
+</label><br>
+<label>Blocks Pg:
+  <input type="number" name="blocks">
+  </label><br>
+  <button type="submit">Add Player</button>
+</form>
+<p><%= errorMsg %></p>
+
+<%- include('../partials/footer') %>
+
+
+
+
+
+
+
+
+
