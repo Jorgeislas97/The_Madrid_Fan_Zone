@@ -5,7 +5,7 @@ module.exports = {
 }
 
 function newPlayer(req, res ) {
-    res.render ('Player/')
+    res.render ('Player/', {errorMsg: ''} );
 }
 
 function index(req,res )
