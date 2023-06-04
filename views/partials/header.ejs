@@ -24,6 +24,8 @@
 </head>
 <body>
     <nav>
-        <a href="/">Home</a> | <a href="/players">View Players</a> | <a href="/Socials">Keep up with us</a>
-    </nav>
+        <a href="/player/new" <%- title === 'Add Player' ? 'class="active"' : '' %>>ADD PLAYER</a>
+        <a href="/player" <%- title === 'All Players' ? 'class="active"' : '' %>>ALL PLAYERS</a>
+      </nav>
 <main> <main>
+    <h1><%= title %></h1>

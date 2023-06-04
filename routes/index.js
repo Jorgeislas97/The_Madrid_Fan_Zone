@@ -3,7 +3,7 @@ const router = express.Router();
 
 
 router.get('/', function(req, res, next) {
-  res.redirect('/player');
+  res.redirect('/players');
 });
 
 module.exports = router;

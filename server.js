@@ -9,8 +9,8 @@ require('dotenv').config();
 require('./config/database');
 
 var indexRouter = require('./routes/index');
-var playerRouter = require('./routes/player');
-var reviewRouter = require('./routes/review');
+var playersRouter = require('./routes/players');
+var reviewsRouter = require('./routes/reviews');
 
 var app = express();
 
@@ -25,10 +25,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/player', playerRouter);
+app.use('/players', playersRouter);
 // Mount the reviews router to root because not all
 // paths for a nested resource begin the same
-app.use('/review', reviewRouter);
+app.use('/', reviewsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -43,7 +43,8 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('errors'); 
 });
+
 
 module.exports = app;
