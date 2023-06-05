@@ -1,9 +1,40 @@
-const express = require('express');
-const router = express.Router();
+var express = require('express')
+var router = express.Router()
+const passport = require('passport')
+const Post = require('../models/post')
 
 
-router.get('/', function(req, res, next) {
-  res.redirect('/players');
-});
+router.get('/', async function (req, res, next) {
+  const posts = await Post.find({})
+  res.render('index', { title: 'Madrid Zone Home Page', posts })
+})
 
-module.exports = router;
+router.get(
+  '/auth/google',
+  passport.authenticate(
+   
+    'google',
+    {
+      
+      scope: ['profile', 'email'],
+     
+      prompt: 'select_account'
+    }
+  )
+)
+
+router.get(
+  '/oauth2callback',
+  passport.authenticate('google', {
+    successRedirect: '/',
+    failureRedirect: '/'
+  })
+)
+
+router.get('/logout', function (req, res) {
+  req.logout(function () {
+    res.redirect('/')
+  })
+})
+
+module.exports = router

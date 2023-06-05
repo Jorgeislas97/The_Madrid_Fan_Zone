@@ -1,0 +1,41 @@
+<%- include('../partials/header')%>
+<section class="team-info">
+  <h2><a href="https://linktr.ee/themadridzone">Real Madrid</a></h2>
+  <h3><a href="https://linktr.ee/themadridzone">Keep Up With Us!</a></h3>
+  
+  <h3><a href="https://www.espn.com/soccer/standings/_/league/esp.1">La Liga 22/23 Table</a> </h3>
+  
+</section>
+<section class="forward-list">
+  <table>
+  <thead>
+    <tr>
+      <th class="row1"><strong>Number</strong></th>
+      <th class="row2"><strong>Name</strong></th>
+      <th class="row3"><strong>Position</strong></th>
+      <th class="row4"><strong>Stats</strong></th>
+      <th class="row5"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% players.forEach(function(p) { %>
+      <tr>
+        
+        <td><%= p.number %></td>
+        <td><%= p.name %></td>
+        <td><%= p.position %></td>
+        <td><a href="/team/<%= p._id %>">Player Stats</a></td>
+        <td>
+          <form action="/team/<%= p._id %>?_method=DELETE" method="POST"
+            class="delete-form">
+            <button type="submit">Delete Player</button>
+          </form>
+        </td>
+      </tr>
+      <% }) %>
+    </tbody>
+    </table>
+  </section>
+<a id="add-player" href="/team/new">Add Player</a>
+
+<%- include('../partials/footer')%>

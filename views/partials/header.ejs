@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madrid Fan Zone</title>
-    <link rel='stylesheet' href='public/stylesheets/style.css' />
-    <style>
-        nav {
-            background-color: blue;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>Madrid Fan Zone</title>
 </head>
+
+
+
 <body>
-    <nav>
-        <a href="/player/new" <%- title === 'Add Player' ? 'class="active"' : '' %>>ADD PLAYER</a>
-        <a href="/player" <%- title === 'All Players' ? 'class="active"' : '' %>>ALL PLAYERS</a>
-      </nav>
-<main> <main>
-    <h1><%= title %></h1>
+  <nav> 
+  <img id="logo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/05b1d062-8976-4f17-b9e8-d315ebac852a/d34jry7-dd26a715-4c9f-4068-a748-9841b097cb79.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA1YjFkMDYyLTg5NzYtNGYxNy1iOWU4LWQzMTVlYmFjODUyYVwvZDM0anJ5Ny1kZDI2YTcxNS00YzlmLTQwNjgtYTc0OC05ODQxYjA5N2NiNzkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VtQX3Fv0jX80sPMUouhMgHl0_LP1-L3VV3cPfuoRTxk">
+  <a href="/" <%- title === 'Home' ? 'class="active"' : '' %>>Home</a>
+  <% if (user) { %>
+  <a href="/team" <%- title === 'Team' ? 'class="active"' : '' %></a>Team</a>
+  <a href="/logout">LOG OUT</a>
+  <% } else { %>
+  <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+  <% } %>
+</nav>
+
+<header>
+  <img src="" alt="">
+</header>
+
+  <h1 id="penis"><%= title %></h1>

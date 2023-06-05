@@ -1,22 +1,32 @@
-<%- include('./partials/header') %>
+<%- include('./partials/header')%>
 
-<style>
-    body {
-        background-image: url('https://i.imgur.com/gdrVmhC.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-</style>
 
-<div style="text-align: center;">
-    <h2> Social Media By Madridstas for Madridstas </h2>
+  <h2>Post Blog/Latest News!</h2>
 
-    <button type="button" class="login-button">Log In</button>
-</div>
 
-<%- include('./partials/footer') %>
-<%- include('./partials/header') %>
+<section id="post-area">
+<div id="post">
+    <% posts.forEach(function(p) { %>
+        <h3 id="title"><%= p.title %></h3>
+        <p><%= p.time %></p>
+        <p id="content"><%= p.content %></p>
+        <form action="/<%= p._id %>?_method=DELETE" method="POST"
+          class="delete-form">
+       <button id="delete" type="submit">Delete Post</button>
+        </form>
+      <% }) %>
+      </div>
+</section>
+  <hr>
 
-<h2>Home Page</h2>
+  <% if (user) { %>
+<form id="create-post" action="/" method="POST" autocomplete="off">
+  <div>Title</div>
+  <input type="text" name="title"><br>
+  <div>content</div>
+  <textarea name="content" id="" cols="80" rows="5"></textarea><br>
+  <button type="submit">Create Post</button>
+</form>
+<% } %>
 
-<%- include('./partials/footer') %>
+<%- include('./partials/footer')%>

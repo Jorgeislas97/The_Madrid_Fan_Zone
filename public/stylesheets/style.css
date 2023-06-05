@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background: url("https://pbs.twimg.com/media/Ez68nIGXoAItAUm?format=jpg&name=large");
+  background-size: cover;
+  background-position: inherit;
+  height: 300px;
+  margin-top: 20px;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+#penis {
+  padding: 40px 0 0 0;
+}
+
+input {
+  background-color: purple;
+  color: whitesmoke;
+  border: black;
+  border-radius: .5rem;
+  margin: 5px 0;
+  width: 250px;
+}
+
+textarea {
+  background-color: purple;
+  color: whitesmoke;
+  border: white;
+  border-radius: .5rem;
+  margin: 5px 0;
+  width: 800px;
+}
+
+#title {
+  border-radius: .5rem;
+  background-color: purple;
+  color: white;
+  width: 500px;
+  height: 25px;
+  text-align: left;
+  margin: 10px 0px;
+}
+
+#post-area {
+  border: 2px solid black;
+  border-radius: .5rem;
+  background-color: purple;
+  color: whitesmoke;
+  text-align: left;
+  padding: 10px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#create-post {
+  margin: 0 auto;
+}
+
+tbody {
+  width: 900px;
+}
+
+form > div {
+  color: white;
+}
+
+form > button {
+  background-color: #010536;
+  color: white;
+  border: 2px solid black;
+  border-radius: .5rem;
+}
+
+.forward-list {
+  border: 2px solid black;
+  border-radius: .5rem;
+  background-color: purple;
+  color: whitesmoke;
+  text-align: left;
+  width: 1000px;
+  margin: 10px auto;
+  padding: 40px 40px;
+}
+
+.row1 {
+  width: 100px;
+  font-style: oblique;
+  font-size: 20px;
+}
+
+.row2 {
+  width: 500px;
+  font-style: oblique;
+  font-size: 20px;
+}
+
+.row3, .row4, .row5 {
+  width: 300px;
+  font-style: oblique;
+  font-size: 20px;
+}
+
+section > p {
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#player-info {
+  color: whitesmoke;
+  font-size: 20px;
+  margin: 40px 40px;
+  text-align: center;
+}
+
+.matches, .goals, .assists {
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: center;
+}
+
+.float {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#stats {
+  color: whitesmoke;
+  visibility: hidden;
+}
+
+body {
+  background-color: black;
+  margin: 0 auto;
+  height: 10vh;
+  color: white;
+
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: 
+    "nav"
+    "main";
+}
+
+h1, h2, h3 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  padding: 0 0 25px 0;
+}
+
+img {
+  width: 10px;
+}
+
+#gif {
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: .5rem;
+}
+
+
+a {
+  color: white;
+  text-align: center;
+}
+
+body > nav {
+  grid-area: nav;
+  background-color: black;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 10px 30px 20px 30px;
+  color: white;
+}
+
+
+nav > #logo {
+  width: 34px;
+  object-fit: contain;
+}
+
+nav > a {
+  margin: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav > a:hover:not(.active) {
+  color: white;
+  background-color: #424748;
+}
+
+nav > a.active {
+  color: white;
+  cursor: default;
+}
+
+.login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 34px;
+}
+
+.login img {
+  height: 30px;
+  width: 30px;
+}
